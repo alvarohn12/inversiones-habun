@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+<body>
+    <section class="banner__container">
+        <h2 class="banner__name"> las mejores laptops</h2>
+    </section>
+    <main class="l-princi">
+        <nav class="nav">
+            <ul class="list">
+                <!--importante-->
+                <!--<li class="list__item">
+                    <div class="list__button">
+                    <a href="#" class="nav__link">Precio</a>
+                    </div>
+                </li>-->
+                <li class="list__item list__item--click">
+                    <div class="list__button list__button--click">
+                        <a href="#" class="nav__link">Precio</a>
+                        <img src="icon/arrow.svg" class="list__arrow">
+                    </div>
+                    <ul class="list__show">
+                        <li class="list__inside">
+                            <span class="f-check">
+                                <input type="checkbox" name="" id="category1" class="chec-m filter" value="category1">
+                                <label for="category1" class="nav__link nav__link--inside">S/1000-S/1500</label>
+                            </span>
+                        </li>
+                        <li class="list__inside">
+                            <span class="f-check">
+                                <input type="checkbox" name="" id="check2" class="chec-m">
+                                <label for="check2" class="nav__link nav__link--inside">S/1500-S/2000</label>
+                            </span>
+                        </li>
+                        <li class="list__inside">
+                            <span class="f-check">
+                                <input type="checkbox" name="" id="check3" class="chec-m">
+                                <label for="check3" class="nav__link nav__link--inside">S/2000-S/2500</label>
+                            </span>
+                        </li>
+                        <li class="list__inside">
+                            <span class="f-check">
+                                <input type="checkbox" name="" id="check4" class="chec-m">
+                                <label for="check4" class="nav__link nav__link--inside">s/2500-s/3000</label>
+                            </span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="list__item list__item--click">
+                    <div class="list__button list__button--click">
+                        <a href="#" class="nav__link">marcas</a>
+                        <img src="icon/arrow.svg" class="list__arrow">
+                    </div>
+                    <ul class="list__show">
+                        <li class="list__inside">
+                            <span class="f-check">
+                                <input type="checkbox" name="" id="marca1" class="chec-m">
+                                <label for="marca1" class="nav__link nav__link--inside">hp</label>
+                            </span>
+                        </li>
+                        <li class="list__inside">
+                            <span class="f-check">
+                                <input type="checkbox" name="" id="marca2" class="chec-m">
+                                <label for="marca2" class="nav__link nav__link--inside">lenovo</label>
+                            </span>
+                        </li>
+                        <li class="list__inside">
+                            <span class="f-check">
+                                <input type="checkbox" name="" id="marca3" class="chec-m">
+                                <label for="marca3" class="nav__link nav__link--inside">apple</label>
+                            </span>
+                        </li>
+                        <li class="list__inside">
+                            <span class="f-check">
+                                <input type="checkbox" name="" id="marca4" class="chec-m">
+                                <label for="marca4" class="nav__link nav__link--inside">asus</label>
+                            </span>
+                        </li>
+                        <li class="list__inside">
+                            <span class="f-check">
+                                <input type="checkbox" name="" id="marca5" class="chec-m">
+                                <label for="marca5" class="nav__link nav__link--inside">acer</label>
+                            </span>
+                        </li>
+                        <li class="list__inside">
+                            <span class="f-check">
+                                <input type="checkbox" name="" id="marca6" class="chec-m">
+                                <label for="marca6" class="nav__link nav__link--inside">msi</label>
+                            </span>
+                        </li>
+                        <li class="list__inside">
+                            <span class="f-check">
+                                <input type="checkbox" name="" id="marca7" class="chec-m">
+                                <label for="marca7" class="nav__link nav__link--inside">huawei</label>
+                            </span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="list__item list__item--click">
+                    <div class="list__button list__button--click">
+                        <a href="#" class="nav__link">tamaña de pantalla</a>
+                        <img src="icon/arrow.svg" class="list__arrow">
+                    </div>
+                    <ul class="list__show">
+                        <li class="list__inside">
+                            <span class="f-check">
+                                <input type="checkbox" name="" id="tamano1" class="chec-m">
+                                <label for="tamano1" class="nav__link nav__link--inside">14"</label>
+                            </span>
+                        </li>
+                        <li class="list__inside">
+                            <span class="f-check">
+                                <input type="checkbox" name="" id="tamano2" class="chec-m">
+                                <label for="tamano2" class="nav__link nav__link--inside">15"</label>
+                            </span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="list__item list__item--click">
+                    <div class="list__button list__button--click">
+                        <a href="#" class="nav__link">memoria</a>
+                        <img src="icon/arrow.svg" class="list__arrow">
+                    </div>
+                    <ul class="list__show">
+                        <li class="list__inside">
+                            <span class="f-check">
+                                <input type="checkbox" name="" id="memoria1" class="chec-m">
+                                <label for="memoria1" class="nav__link nav__link--inside">8 de ram</label>
+                            </span>
+                        </li>
+                        <li class="list__inside">
+                            <span class="f-check">
+                                <input type="checkbox" name="" id="memoria2" class="chec-m">
+                                <label for="memoria2" class="nav__link nav__link--inside">16 de ram</label>
+                            </span>
+                        </li>
+                        <li class="list__inside">
+                            <span class="f-check">
+                                <input type="checkbox" name="" id="memoria3" class="chec-m">
+                                <label for="memoria3" class="nav__link nav__link--inside">4 de ram</label>
+                            </span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="list__item list__item--click">
+                    <div class="list__button list__button--click">
+                        <a href="#" class="nav__link">Procesador</a>
+                        <img src="icon/arrow.svg" class="list__arrow">
+                    </div>
+                    <ul class="list__show">
+                        <li class="list__inside">
+                            <span class="f-check">
+                                <input type="checkbox" name="" id="Procesador1" class="chec-m">
+                                <label for="Procesador1" class="nav__link nav__link--inside">intel</label>
+                            </span>
+                        </li>
+                        <li class="list__inside">
+                            <span class="f-check">
+                                <input type="checkbox" name="" id="Procesador2" class="chec-m">
+                                <label for="Procesador2" class="nav__link nav__link--inside">AMD</label>
+                            </span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="list__item list__item--click">
+                    <div class="list__button list__button--click">
+                        <a href="#" class="nav__link">almacenaniento</a>
+                        <img src="icon/arrow.svg" class="list__arrow">
+                    </div>
+                    <ul class="list__show">
+                        <li class="list__inside">
+                            <span class="f-check">
+                                <input type="checkbox" name="" id="almace1" class="chec-m">
+                                <label for="almace1" class="nav__link nav__link--inside">1TB</label>
+                            </span>
+                        </li>
+                        <li class="list__inside">
+                            <span class="f-check">
+                                <input type="checkbox" name="" id="almace2" class="chec-m">
+                                <label for="almace2" class="nav__link nav__link--inside">500GB</label>
+                            </span>
+                        </li>
+                        <li class="list__inside">
+                            <span class="f-check">
+                                <input type="checkbox" name="" id="almace3" class="chec-m">
+                                <label for="almace3" class="nav__link nav__link--inside">SOLO SSD</label>
+                            </span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="list__item list__item--click">
+                    <div class="list__button list__button--click">
+                        <a href="#" class="nav__link">disco mecanico</a>
+                        <img src="icon/arrow.svg" class="list__arrow">
+                    </div>
+                    <ul class="list__show">
+                        <li class="list__inside">
+                            <span class="f-check">
+                                <input type="checkbox" name="" id="" class="chec-m">
+                                <label for="" class="nav__link nav__link--inside">especificar</label>
+                            </span>
+                        </li>
+                        <li class="list__inside">
+                            <span class="f-check">
+                                <input type="checkbox" name="" id="" class="chec-m">
+                                <label for="" class="nav__link nav__link--inside">especificar</label>
+                            </span>
+                        </li>
+                        <li class="list__inside">
+                            <span class="f-check">
+                                <input type="checkbox" name="" id="" class="chec-m">
+                                <label for="" class="nav__link nav__link--inside"></label>
+                            </span>
+                        </li>
+                        <li class="list__inside">
+                            <span class="f-check">
+                                <input type="checkbox" name="" id="" class="chec-m">
+                                <label for="" class="nav__link nav__link--inside"></label>
+                            </span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="list__item list__item--click">
+                    <div class="list__button list__button--click">
+                        <a href="#" class="nav__link">graficos</a>
+                        <img src="icon/arrow.svg" class="list__arrow">
+                    </div>
+                    <ul class="list__show">
+                        <li class="list__inside">
+                            <a href="#" class="nav__link nav__link--inside">entran las cualidades</a>
+                        </li>
+                        <li class="list__inside">
+                            <a href="#" class="nav__link nav__link--inside">entran las cualidades</a>
+                        </li>
+                        <li class="list__inside">
+                            <a href="#" class="nav__link nav__link--inside">entran las cualidades</a>
+                        </li>
+                        <li class="list__inside">
+                            <a href="#" class="nav__link nav__link--inside">entran las cualidades</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="list__item list__item--click">
+                    <div class="list__button list__button--click">
+                        <a href="#" class="nav__link">buscar por uso</a>
+                        <img src="icon/arrow.svg" class="list__arrow">
+                    </div>
+                    <ul class="list__show">
+                        <li class="list__inside">
+                            <a href="#" class="nav__link nav__link--inside">entran las cualidades</a>
+                        </li>
+                        <li class="list__inside">
+                            <a href="#" class="nav__link nav__link--inside">entran las cualidades</a>
+                        </li>
+                        <li class="list__inside">
+                            <a href="#" class="nav__link nav__link--inside">entran las cualidades</a>
+                        </li>
+                        <li class="list__inside">
+                            <a href="#" class="nav__link nav__link--inside">entran las cualidades</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="list__item list__item--click">
+                    <div class="list__button list__button--click">
+                        <a href="#" class="nav__link">creatividad</a>
+                        <img src="icon/arrow.svg" class="list__arrow">
+                    </div>
+                    <ul class="list__show">
+                        <li class="list__inside">
+                            <a href="#" class="nav__link nav__link--inside">entran las cualidades</a>
+                        </li>
+                        <li class="list__inside">
+                            <a href="#" class="nav__link nav__link--inside">entran las cualidades</a>
+                        </li>
+                        <li class="list__inside">
+                            <a href="#" class="nav__link nav__link--inside">entran las cualidades</a>
+                        </li>
+                        <li class="list__inside">
+                            <a href="#" class="nav__link nav__link--inside">entran las cualidades</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="list__item list__item--click">
+                    <div class="list__button list__button--click">
+                        <a href="#" class="nav__link">entretenimiento</a>
+                        <img src="icon/arrow.svg" class="list__arrow">
+                    </div>
+                    <ul class="list__show">
+                        <li class="list__inside">
+                            <a href="#" class="nav__link nav__link--inside">entran las cualidades</a>
+                        </li>
+                        <li class="list__inside">
+                            <a href="#" class="nav__link nav__link--inside">entran las cualidades</a>
+                        </li>
+                        <li class="list__inside">
+                            <a href="#" class="nav__link nav__link--inside">entran las cualidades</a>
+                        </li>
+                        <li class="list__inside">
+                            <a href="#" class="nav__link nav__link--inside">entran las cualidades</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="list__item list__item--click">
+                    <div class="list__button list__button--click">
+                        <a href="#" class="nav__link">uso diario</a>
+                        <img src="icon/arrow.svg" class="list__arrow">
+                    </div>
+                    <ul class="list__show">
+                        <li class="list__inside">
+                            <a href="#" class="nav__link nav__link--inside">entran las cualidades</a>
+                        </li>
+                        <li class="list__inside">
+                            <a href="#" class="nav__link nav__link--inside">entran las cualidades</a>
+                        </li>
+                        <li class="list__inside">
+                            <a href="#" class="nav__link nav__link--inside">entran las cualidades</a>
+                        </li>
+                        <li class="list__inside">
+                            <a href="#" class="nav__link nav__link--inside">entran las cualidades</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="list__item list__item--click">
+                    <div class="list__button list__button--click">
+                        <a href="#" class="nav__link">buscar por tipo</a>
+                        <img src="icon/arrow.svg" class="list__arrow">
+                    </div>
+                    <ul class="list__show">
+                        <li class="list__inside">
+                            <a href="#" class="nav__link nav__link--inside">entran las cualidades</a>
+                        </li>
+                        <li class="list__inside">
+                            <a href="#" class="nav__link nav__link--inside">entran las cualidades</a>
+                        </li>
+                        <li class="list__inside">
+                            <a href="#" class="nav__link nav__link--inside">entran las cualidades</a>
+                        </li>
+                        <li class="list__inside">
+                            <a href="#" class="nav__link nav__link--inside">entran las cualidades</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="list__item list__item--click">
+                    <div class="list__button list__button--click">
+                        <a href="#" class="nav__link">2 en 1</a>
+                        <img src="icon/arrow.svg" class="list__arrow">
+                    </div>
+                    <ul class="list__show">
+                        <li class="list__inside">
+                            <a href="#" class="nav__link nav__link--inside">entran las cualidades</a>
+                        </li>
+                        <li class="list__inside">
+                            <a href="#" class="nav__link nav__link--inside">entran las cualidades</a>
+                        </li>
+                        <li class="list__inside">
+                            <a href="#" class="nav__link nav__link--inside">entran las cualidades</a>
+                        </li>
+                        <li class="list__inside">
+                            <a href="#" class="nav__link nav__link--inside">entran las cualidades</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <section class="cards">
+            <div class="card category1">
+                <div class="card-h">
+                    <span class="heart">🤍</span>
+                </div>
+                <div class="img-cards">
+                    <img src="img/laptop1.avif" alt="Producto 1" class="card-img">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Título del Productoa</h3>
+                    <p class="card-description">Descripción breve del producto. Este es un ejemplo de texto que puede ocupar
+                        varias
+                        líneas.</p>
+                    <div class="card-prices">
+                        <span class="original-price">S/. 1500 <span class="descuento">descuento</span></span><br>
+                        <span class="discounted-price">S/. 1300.99</span>
+                    </div>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <span class="c-star">4.8</span>
+                    </div>
+                    <div class="card-actions">
+                        <button class="btn add-to-cart">Añadir al Carrito</button>
+                        <button id="vermas" class=" vermas more-info">Más Información</button>
+                    </div>
+                </div>
+            </div>
+            <div class="overlay"></div>
+            <div class="cont-escondido">
+                <button class="close-btn">&times;</button>
+                <!-- Contenido del modal -->
+                <div class="contenedor-imagen">
+                    <img src="img/audifonogamer.png" alt="Imagen" id="imagen" class="c-img">
+                    <img src="img/laptopgaming.jpg" alt="img" class="c-img">
+            
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium cupiditate nemo dicta assumenda possimus
+                    esse nesciunt reiciendis. Voluptas nostrum sunt molestias. Quam aperiam quis reiciendis voluptates deserunt
+                    nostrum dicta enim.</p>
+                <ul class="carac">
+                    <li>caracteristica1</li>
+                    <li>caracteristica1</li>
+                    <li>caracteristica1</li>
+                    <li>caracteristica1</li>
+                    <li>caracteristica1</li>
+                    <li>caracteristica1</li>
+                </ul>
+            </div>
+            </div>
+                
+            <div class="card">
+                <div class="card-h">
+                    <span class="heart">🤍</span>
+                </div>
+                <div class="img-cards">
+                    <img src="img/laptopgaming.jpg" alt="Producto 1" class="card-img">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Título del Producto</h3>
+                    <p class="card-description">Descripción breve del producto. Este es un ejemplo de texto que puede ocupar
+                        varias
+                        líneas.</p>
+                    <div class="card-prices">
+                        <span class="original-price">S/. 1000</span><br>
+                        <span class="discounted-price">S/. 1300.99</span>
+                    </div>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <span class="c-star">4.8</span>
+                    </div>
+                    <div class="card-actions">
+                        <button class="btn add-to-cart">Añadir al Carrito</button>
+                        <button id="vermas" class=" vermas more-info">Más Información</button>
+                    </div>
+                </div>
+            </div>
+            <div class="overlay"></div>
+            <div class="cont-escondido">
+                <button class="close-btn">&times;</button>
+                <!-- Contenido del modal -->
+                <div class="contenedor-imagen">
+                    <img src="img/audifonogamer.png" alt="Imagen" id="imagen" class="c-img">
+            
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium cupiditate nemo dicta assumenda possimus
+                    esse nesciunt reiciendis. Voluptas nostrum sunt molestias. Quam aperiam quis reiciendis voluptates deserunt
+                    nostrum dicta enim.</p>
+                <ul class="carac">
+                    <li>caracteristica2</li>
+                    <li>caracteristica2</li>
+                    <li>caracteristica1</li>
+                    <li>caracteristica1</li>
+                    <li>caracteristica1</li>
+                    <li>caracteristica1</li>
+                </ul>
+            </div>
+            </div>
+            <div class="card">
+                <div class="card-h">
+                    <span class="heart">🤍</span>
+                </div>
+                <div class="img-cards">
+                    <img src="img/laptopgaming.jpg" alt="Producto 1" class="card-img">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Título del Producto</h3>
+                    <p class="card-description">Descripción breve del producto. Este es un ejemplo de texto que puede ocupar
+                        varias
+                        líneas.</p>
+                    <div class="card-prices">
+                        <span class="original-price">S/. 1000</span><br>
+                        <span class="discounted-price">S/. 1300.99</span>
+                    </div>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <span class="c-star">4.8</span>
+                    </div>
+                    <div class="card-actions">
+                        <button class="btn add-to-cart">Añadir al Carrito</button>
+                        <button id="vermas" class=" vermas more-info">Más Información</button>
+                    </div>
+                </div>
+            </div>
+            <div class="overlay"></div>
+            </div>
+            <div class="card">
+                <div class="card-h">
+                    <span class="heart">🤍</span>
+                </div>
+                <div class="img-cards">
+                    <img src="img/laptopgaming.jpg" alt="Producto 1" class="card-img">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Título del Producto</h3>
+                    <p class="card-description">Descripción breve del producto. Este es un ejemplo de texto que puede ocupar
+                        varias
+                        líneas.</p>
+                    <div class="card-prices">
+                        <span class="original-price">S/. 1000</span><br>
+                        <span class="discounted-price">S/. 1300.99</span>
+                    </div>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <span class="c-star">4.8</span>
+                    </div>
+                    <div class="card-actions">
+                        <button class="btn add-to-cart">Añadir al Carrito</button>
+                        <button id="vermas" class=" vermas more-info">Más Información</button>
+                    </div>
+                </div>
+            </div>
+            <div class="overlay"></div>
+            <div class="cont-escondido">
+                <button class="close-btn">&times;</button>
+                <!-- Contenido del modal -->
+                <div class="contenedor-imagen">
+                    <img src="img/audifonogamer.png" alt="Imagen" id="imagen" class="c-img">
+                    <img src="img/laptopgaming.jpg" alt="img" class="c-img">
+            
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium cupiditate nemo dicta assumenda possimus
+                    esse nesciunt reiciendis. Voluptas nostrum sunt molestias. Quam aperiam quis reiciendis voluptates deserunt
+                    nostrum dicta enim.</p>
+                <ul class="carac">
+                    <li>caracteristica1</li>
+                    <li>caracteristica1</li>
+                    <li>caracteristica1</li>
+                    <li>caracteristica1</li>
+                    <li>caracteristica1</li>
+                    <li>caracteristica1</li>
+                </ul>
+            </div>
+            </div>
+            <div class="card">
+                <div class="card-h">
+                    <span class="heart">🤍</span>
+                </div>
+                <div class="img-cards">
+                    <img src="img/laptopgaming.jpg" alt="Producto 1" class="card-img">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Título del Producto</h3>
+                    <p class="card-description">Descripción breve del producto. Este es un ejemplo de texto que puede ocupar
+                        varias
+                        líneas.</p>
+                    <div class="card-prices">
+                        <span class="original-price">S/. 1000</span><br>
+                        <span class="discounted-price">S/. 1300.99</span>
+                    </div>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <span class="c-star">4.8</span>
+                    </div>
+                    <div class="card-actions">
+                        <button class="btn add-to-cart">Añadir al Carrito</button>
+                        <button id="vermas" class=" vermas more-info">Más Información</button>
+                    </div>
+                </div>
+            </div>
+            <div class="overlay"></div>
+            <div class="cont-escondido">
+                <button class="close-btn">&times;</button>
+                <!-- Contenido del modal -->
+                <div class="contenedor-imagen">
+                    <img src="img/audifonogamer.png" alt="Imagen" id="imagen" class="c-img">
+                    <img src="img/laptopgaming.jpg" alt="img" class="c-img">
+            
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium cupiditate nemo dicta assumenda possimus
+                    esse nesciunt reiciendis. Voluptas nostrum sunt molestias. Quam aperiam quis reiciendis voluptates deserunt
+                    nostrum dicta enim.</p>
+                <ul class="carac">
+                    <li>caracteristica1</li>
+                    <li>caracteristica1</li>
+                    <li>caracteristica1</li>
+                    <li>caracteristica1</li>
+                    <li>caracteristica1</li>
+                    <li>caracteristica1</li>
+                </ul>
+            </div>
+            </div>
+            <div class="card">
+                <div class="card-h">
+                    <span class="heart">🤍</span>
+                </div>
+                <div class="img-cards">
+                    <img src="img/laptopgaming.jpg" alt="Producto 1" class="card-img">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Título del Producto</h3>
+                    <p class="card-description">Descripción breve del producto. Este es un ejemplo de texto que puede ocupar
+                        varias
+                        líneas.</p>
+                    <div class="card-prices">
+                        <span class="original-price">S/. 1500 <span class="descuento">descuento</span></span><br>
+                        <span class="discounted-price">S/. 1300.99</span>
+                    </div>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <span class="c-star">4.8</span>
+                    </div>
+                    <div class="card-actions">
+                        <button class="btn add-to-cart">Añadir al Carrito</button>
+                        <button id="vermas" class=" vermas more-info">Más Información</button>
+                    </div>
+                </div>
+            </div>
+            <div class="overlay"></div>
+            <div class="cont-escondido">
+                <button class="close-btn">&times;</button>
+                <!-- Contenido del modal -->
+                <div class="contenedor-imagen">
+                    <img src="img/audifonogamer.png" alt="Imagen" id="imagen" class="c-img">
+                    <img src="img/laptopgaming.jpg" alt="img" class="c-img">
+            
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium cupiditate nemo dicta assumenda possimus
+                    esse nesciunt reiciendis. Voluptas nostrum sunt molestias. Quam aperiam quis reiciendis voluptates deserunt
+                    nostrum dicta enim.</p>
+                <ul class="carac">
+                    <li>caracteristica1</li>
+                    <li>caracteristica1</li>
+                    <li>caracteristica1</li>
+                    <li>caracteristica1</li>
+                    <li>caracteristica1</li>
+                    <li>caracteristica1</li>
+                </ul>
+            </div>
+            </div>
+            <div class="card">
+                <div class="card-h">
+                    <span class="heart">🤍</span>
+                </div>
+                <div class="img-cards">
+                    <img src="img/laptopgaming.jpg" alt="Producto 1" class="card-img">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Título del Producto</h3>
+                    <p class="card-description">Descripción breve del producto. Este es un ejemplo de texto que puede ocupar
+                        varias
+                        líneas.</p>
+                    <div class="card-prices">
+                        <span class="original-price">S/. 1000</span><br>
+                        <span class="discounted-price">S/. 1300.99</span>
+                    </div>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <span class="c-star">4.8</span>
+                    </div>
+                    <div class="card-actions">
+                        <button class="btn add-to-cart">Añadir al Carrito</button>
+                        <button id="vermas" class=" vermas more-info">Más Información</button>
+                    </div>
+                </div>
+            </div>
+            <div class="overlay"></div>
+            <div class="cont-escondido">
+                <button class="close-btn">&times;</button>
+                <!-- Contenido del modal -->
+                <div class="contenedor-imagen">
+                    <img src="img/audifonogamer.png" alt="Imagen" id="imagen" class="c-img">
+                    <img src="img/laptopgaming.jpg" alt="img" class="c-img">
+            
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium cupiditate nemo dicta assumenda possimus
+                    esse nesciunt reiciendis. Voluptas nostrum sunt molestias. Quam aperiam quis reiciendis voluptates deserunt
+                    nostrum dicta enim.</p>
+                <ul class="carac">
+                    <li>caracteristica1</li>
+                    <li>caracteristica1</li>
+                    <li>caracteristica1</li>
+                    <li>caracteristica1</li>
+                    <li>caracteristica1</li>
+                    <li>caracteristica1</li>
+                </ul>
+            </div>
+            <div class="card">
+                <div class="card-h">
+                    <span class="heart">🤍</span>
+                </div>
+                <div class="img-cards">
+                    <img src="img/laptopgaming.jpg" alt="Producto 1" class="card-img">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Título del Producto</h3>
+                    <p class="card-description">Descripción breve del producto. Este es un ejemplo de texto que puede ocupar
+                        varias
+                        líneas.</p>
+                    <div class="card-prices">
+                        <span class="original-price">S/. 1000</span><br>
+                        <span class="discounted-price">S/. 1300.99</span>
+                    </div>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <span class="c-star">4.8</span>
+                    </div>
+                    <div class="card-actions">
+                        <button class="btn add-to-cart">Añadir al Carrito</button>
+                        <button id="vermas" class=" vermas more-info">Más Información</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+    
+    <script src="js/filtrado.js"></script>
+    <script src="js/favo.js"></script>
+</body>
+</html>

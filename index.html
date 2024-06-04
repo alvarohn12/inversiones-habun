@@ -29,7 +29,7 @@
             <div class="nav-de-info">
                 <button class="catalogo">descargar su catalogo</button>
                 <div class="user-menu">
-                    <img id="user-icon"  src="img/logo_hasbun.svg" alt="Usuario" class="user-icon " title="usuario">
+                    <img id="user-icon"  src="img/logo_hasbun.png" alt="Usuario" class="user-icon " title="usuario">
                     <div class="user-options" id="user-options">
                         <a href="login.html">Iniciar Sesión</a>
                         <a href="register.html" id="register-link">Registrarse</a>
@@ -37,7 +37,7 @@
                     </div>
                 </div>
                 <a href="#" class="link-course" title="cursos"><img src="img/pureq-removebg-preview.png" alt="cursos"></a>
-                <a href="#" class="favo-nav" title="favoritos"><i class='bx bx-heart'></i></a>
+                <a href="favoritos.html" class="favo-nav" title="favoritos"><i class='bx bx-heart'></i></a>
                 <a href="#" class="cart-n" title="mis compras"><i class='bx bx-cart-alt'></i></a>
             </div>
 
@@ -49,7 +49,7 @@
 
                     <ul class="menu__nesting">
                         <li class="menu__inside">
-                            <a href="#" class="menu__link menu__link--inside">laptops</a>
+                            <a href="laptops.html" class="menu__link menu__link--inside">laptops</a>
                         </li>
                         <li class="menu__inside">
                             <a href="#" class="menu__link menu__link--inside">computadoras</a>
@@ -177,17 +177,23 @@
         <div class="slider-container">
             <div class="slider">
                 <div class="slide">
-                    <a href="link1.html"><img src="img/audifonogamer.png" alt="Imagen 1"></a>
-<!--                     <div class="caption">
+                    <a href="#"><img src="img/audifonogamer.png" alt="Imagen 1"></a>
+                    <!-- <div class="caption">
                         <h2>Título de la Imagen 1</h2>
                         <p>Descripción de la imagen 1</p>
                     </div> -->
                 </div>
                 <div class="slide">
-                    <a href="link2.html"><img src="img/impresora-multi.jpg" alt="Imagen 2"></a>
+                    <a href="#"><img src="img/laptopgaming.jpg" alt="Imagen 2"></a>
                 </div>
                 <div class="slide">
-                    <a href="link3.html"><img src="img/laptop-asus.webp" alt="Imagen 3"></a>
+                    <a href="#"><img src="img/pcgaming.jpg" alt="Imagen 3"></a>
+                </div>
+                <div class="slide">
+                    <a href="#"><img src="img/silla gamer.jpg" alt="Imagen 4"></a>
+                </div>
+                <div class="slide">
+                    <a href="#"><img src="img/tacladomecanico.jpg" alt="Imagen 4"></a>
                 </div>
             </div>
             <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
@@ -196,6 +202,8 @@
                 <span class="dot" onclick="currentSlide(0)"></span>
                 <span class="dot" onclick="currentSlide(1)"></span>
                 <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
             </div>
         </div>
     </main>
@@ -220,6 +228,80 @@
                 </figure>
             </section>
     </div>
+    <section class="container__productos">
+        <h3 class="productos__title">Los mejores productos <span class="productos__color">elige tu opcion</span></h3>
+    </section>
+        <div class="productos__slider">
+            <button id="prev" class="slider__button"><i class='bx bx-chevron-left'></i></button>
+            <div class="slider__cards">
+                <div class="slider__card">
+                    <div class="card__producto">
+                        <h4 class="producto__name">laptop gamer</h4>
+                        <img src="img/tacladomecanico.jpg" class="producto__img" alt="">
+                        <button class="producto__button">mas informacion</button>
+                        <div class="producto__info">
+                            <p class="producto__precio">Precio S/300</p>
+                            <button class="producto__btn">comprar</button>
+                        </div>
+                    </div>
+                    <div class="card__producto">
+                        <h4 class="producto__name">laptop gamer</h4>
+                        <img src="img/laptopgaming.jpg" class="producto__img" alt="">
+                        <button class="producto__button">mas informacion</button>
+                        <div class="producto__info">
+                            <p class="producto__precio">Precio S/400</p>
+                            <button class="producto__btn">comprar</button>
+                        </div>
+                    </div>
+                    <div class="card__producto">
+                        <h4 class="producto__name">laptop gamer</h4>
+                        <img src="img/audifonogamer.png" class="producto__img" alt="">
+                        <button class="producto__button">mas informacion</button>
+                        <div class="producto__info">
+                            <p class="producto__precio">Precio S/300</p>
+                            <button class="producto__btn">comprar</button>
+                        </div>
+                    </div>
+                    <div class="card__producto">
+                        <h4 class="producto__name">laptop gamer</h4>
+                        <img src="img/silla gamer.jpg" class="producto__img" alt="">
+                        <button class="producto__button">mas informacion</button>
+                        <div class="producto__info">
+                            <p class="producto__precio">Precio S/300</p>
+                            <button class="producto__btn">comprar</button>
+                        </div>
+                    </div>
+                    <div class="card__producto">
+                        <h4 class="producto__name">laptop gamer</h4>
+                        <img src="img/tacladomecanico.jpg" class="producto__img" alt="">
+                        <button class="producto__button">mas informacion</button>
+                        <div class="producto__info">
+                            <p class="producto__precio">Precio S/300</p>
+                            <button class="producto__btn">comprar</button>
+                        </div>
+                    </div>
+                    <div class="card__producto">
+                        <h4 class="producto__name">laptop gamer</h4>
+                        <img src="img/tacladomecanico.jpg" class="producto__img" alt="">
+                        <button class="producto__button">mas informacion</button>
+                        <div class="producto__info">
+                            <p class="producto__precio">Precio S/300</p>
+                            <button class="producto__btn">comprar</button>
+                        </div>
+                    </div>
+                    <div class="card__producto">
+                        <h4 class="producto__name">laptop gamer</h4>
+                        <img src="img/tacladomecanico.jpg" class="producto__img" alt="">
+                        <button class="producto__button">mas informacion</button>
+                        <div class="producto__info">
+                            <p class="producto__precio">Precio S/300</p>
+                            <button class="producto__btn">comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button id="next" class="slider__button"><i class='bx bx-chevron-right' ></i></button>
+        </div>
     <footer>
         <h2 class="name-footer">mantente conectado</h2>
         <div class="e-book">
@@ -272,5 +354,7 @@
         <div class="copyright">© 2024 Inversiones Hasbun. Todos los derechos recervados. <span class="name-autor"> alvaro hn®</span> </div>
     </footer>
     <script src="js/main.js"></script>
+    <a href="https://api.whatsapp.com/send?phone=984110445" class="whatsapp-btn" target="_blank">
+        <img src="icon/image.png" alt="WhatsApp">
 </body>
 </html>

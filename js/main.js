@@ -143,3 +143,50 @@ showSlide(currentIndex);
 setInterval(() => {
     changeSlide(1);
 }, 5000);
+/* filtrado */
+// slider de cards
+document.addEventListener('DOMContentLoaded', () => {
+    const slider = document.querySelector('.slider__card');
+    const prevButton = document.getElementById('prev');
+    const nextButton = document.getElementById('next');
+
+    let currentIndex = 0;
+    const cardWidth = 220; // Ancho de la tarjeta + margen
+    const maxIndex = document.querySelectorAll('.card__producto').length - 1;
+
+    prevButton.addEventListener('click', () => {
+        if (currentIndex > 0) {
+            currentIndex--;
+            updateSlider();
+        }
+    });
+
+    nextButton.addEventListener('click', () => {
+        if (currentIndex < maxIndex) {
+            currentIndex++;
+            updateSlider();
+        }
+    });
+
+    function updateSlider() {
+        slider.style.transform = `translateX(${-currentIndex * cardWidth}px)`;
+        updateButtons();
+    }
+
+    function updateButtons() {
+        if (currentIndex === 0) {
+            prevButton.classList.add('hidden');
+        } else {
+            prevButton.classList.remove('hidden');
+        }
+
+        if (currentIndex === maxIndex) {
+            nextButton.classList.add('hidden');
+        } else {
+            nextButton.classList.remove('hidden');
+        }
+    }
+
+    // Inicializa la visibilidad de los botones al cargar la página
+    updateButtons();
+});
