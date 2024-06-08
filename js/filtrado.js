@@ -34,3 +34,23 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+document.addEventListener("DOMContentLoaded", function() {
+    const navToggle = document.getElementById("navToggle");
+    const navClose = document.getElementById("navClose");
+    const nav = document.getElementById("nav");
+    const listItems = document.querySelectorAll(".list__item--click");
+
+    navToggle.addEventListener("click", function() {
+        nav.classList.toggle("open");
+    });
+
+    navClose.addEventListener("click", function() {
+        nav.classList.remove("open");
+    });
+
+    listItems.forEach(item => {
+        item.addEventListener("click", function() {
+            this.classList.toggle("list__item--click");
+        });
+    });
+});

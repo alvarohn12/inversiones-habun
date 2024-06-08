@@ -1,90 +1,3 @@
-(function(){
-    const listElements = document.querySelectorAll('.menu__item--show');
-    const list = document.querySelector('.menu__links');
-    const menu = document.querySelector('.menu-hamburguesa');
-
-    const addClick = ()=>{
-        listElements.forEach(element =>{
-            element.addEventListener('click', ()=>{
-
-
-                let subMenu = element.children[1];
-                let height = 0;
-                element.classList.toggle('menu__item--active');
-
-
-                if(subMenu.clientHeight === 0){
-                    height = subMenu.scrollHeight;
-                }
-
-                subMenu.style.height = `${height}px`;
-
-            });
-        });
-    }
-
-    const deleteStyleHeight = ()=>{
-        listElements.forEach(element=>{
-
-            if(element.children[1].getAttribute('style')){
-                element.children[1].removeAttribute('style');
-                element.classList.remove('menu__item--active');
-            }
-
-        });
-    }
-
-
-    window.addEventListener('resize', ()=>{
-        if(window.innerWidth > 800){
-            deleteStyleHeight();
-            if(list.classList.contains('menu__links--show'))
-                list.classList.remove('menu__links--show');
-
-        }else{
-            addClick();
-        }
-    });
-
-    if(window.innerWidth <= 800){
-        addClick();
-    }
-
-    menu.addEventListener('click', ()=> list.classList.toggle('menu__links--show'));
-
-
-
-})();
-/* document.addEventListener('DOMContentLoaded', function () {
-    let slideIndex = 0;
-    showSlides();
-
-    function showSlides() {
-        let slides = document.getElementsByClassName("slide");
-        for (let i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {
-            slideIndex = 1;
-        }
-        slides[slideIndex - 1].style.display = "block";
-        setTimeout(showSlides, 5000); // Cambia la imagen cada 5 segundos
-    }
-
-    document.querySelector('.prev').addEventListener('click', function () {
-        slideIndex -= 2;
-        if (slideIndex < 0) {
-            slideIndex = document.getElementsByClassName("slide").length - 1;
-        }
-        showSlides();
-    });
-
-    document.querySelector('.next').addEventListener('click', function () {
-        showSlides();
-    });
-});
- */
 let currentIndex = 0;
 const slides = document.querySelectorAll('.slide');
 const dots = document.querySelectorAll('.dot');
@@ -190,3 +103,19 @@ document.addEventListener('DOMContentLoaded', () => {
     // Inicializa la visibilidad de los botones al cargar la página
     updateButtons();
 });
+document.addEventListener('DOMContentLoaded', ()=>{
+    let alerta = document.getElementById('alerta');
+    let alertaCerrar = document.querySelector('.alerta__close');
+    
+    /* tiempo para que aparezca la alerta */
+    let tiempoAlerta=5000;
+
+    setTimeout(() =>{
+        alerta.style.display='block';
+    },tiempoAlerta);
+
+    /* para cerrar el boton */
+    alertaCerrar.addEventListener('click', ()=> {
+        alerta.style.display='none';
+    })
+})
