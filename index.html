@@ -8,17 +8,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>inversiones hasbun</title>
 </head>
 
 <body>
     <h2 class="encabezado-p">"Las Mejores Marcas y Modelos al Mejor Precio", "Soporte Técnico 24/7", y "Garantía de
         Satisfacción"</h2>
-    <header>
         <div class="header-view">
             <div class="baner-logo">
                 <figure>
@@ -52,6 +51,7 @@
             </div>
 
         </div>
+    <header>
         <nav class="nav-links">
             <ul class="menu__links">
                 <li class="menu__item  menu__item--show">
@@ -238,7 +238,7 @@
             </div>
         </div>
     </main>
-    <div class="otros-prin">
+    <div class="otros-prin headline">
         <aside class="aside">
             <h4 class="text-aside">sobre nosotros</h4>
             <h3 class="aside-frase">te brindamos soluciones misma inversion mejores resultados</h3>
@@ -263,10 +263,10 @@
             </figure>
         </section>
     </div>
-    <section class="container__productos">
+    <section class="container__productos headline" >
         <h3 class="productos__title">Los mejores productos <span class="productos__color">elige tu opcion</span></h3>
     </section>
-    <div class="productos__slider">
+    <div class="productos__slider headline">
         <button id="prev" class="slider__button"><i class='bx bx-chevron-left'></i></button>
         <div class="slider__cards">
             <div class="slider__card">
@@ -337,7 +337,7 @@
         </div>
         <button id="next" class="slider__button"><i class='bx bx-chevron-right'></i></button>
     </div>
-    <footer>
+    <footer class="headline">
         <h2 class="name-footer">mantente conectado</h2>
         <div class="e-book">
             <div class="modi">
@@ -393,8 +393,15 @@
         <div class="copyright">© 2024 Inversiones Hasbun. Todos los derechos recervados. <span class="name-autor">
                 alvaro hn®</span> </div>
     </footer>
+    <script>
+		ScrollReveal().reveal('.headline');
+	</script>
     <script src="js/main.js"></script>
     <script src="js/menu.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <a href="https://api.whatsapp.com/send?phone=984110445" class="whatsapp-btn" target="_blank">
         <img src="icon/image.png" alt="WhatsApp">
 </body>
