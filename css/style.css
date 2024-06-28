@@ -397,6 +397,63 @@ header{
     background-color: var(--colorprimario400);
 }
 /* fin de slider */
+/* galeria principal */
+.principal__galeria {
+    padding: 10px;
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+        "a b c c"
+        "d d d d"
+        "d d d d"
+        "e e f g";
+    gap: 1rem;
+}
+.galeria__img {
+    transform: scale(1.01);
+    width: 100%;
+    border-radius: 10px;
+    height: 100%;
+    object-fit: cover; /* Esto asegura que las imágenes mantengan su proporción y llenen el área asignada */
+}
+
+.galeria__container:nth-child(1) {
+    grid-area: a;
+    height: 200px;
+}
+
+.galeria__container:nth-child(2) {
+    grid-area: b;
+    height: 200px;
+}
+
+.galeria__container:nth-child(3) {
+    grid-area: c;
+    height: 200px;
+}
+
+.galeria__container:nth-child(4) {
+    grid-area: d;
+    height: 400px;
+}
+
+.galeria__container:nth-child(5) {
+    grid-area: e;
+    height: 200px;
+}
+
+.galeria__container:nth-child(6) {
+    grid-area: f;
+    height: 200px;
+}
+
+.galeria__container:nth-child(7) {
+    grid-area: g;
+    height: 200px;
+}
+.galery__container:hover{
+    transform: scale(1.01);
+}
 /* nesecidad */
 .nesecidad__title{
     margin: 20px 0 0 20px;
@@ -1288,17 +1345,18 @@ footer{
     transition: background-color 0.2s ease;
 }
 .btnn {
-    margin: 0 20px;
-    width: 50%;
-    display: flex;
-    background-color: var(--colorprimario400);
-    color: var(--colorsecundario);
-    border: none;
-    padding: 10px;
+    background-color: transparent;
+    padding: 5px 20px;
+    border: 1px solid var(--colorteciario);
     cursor: pointer;
+    font-family: var(--fuentelato);
     border-radius: 5px;
     font-size: 1.1rem;
+}
+.btnn:hover{
     transition: background-color 0.2s ease;
+    background-color: var(--colorteciario);
+    color: var(--colorsecundario);
 }
 
 .card:hover .btn {
@@ -1448,7 +1506,7 @@ footer{
 }
 .descripcion__boton{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     padding: 10px;
     width: 100%;
 }
@@ -1511,7 +1569,8 @@ footer{
 /* style de computadoras */
 .filtrador{
     text-transform: capitalize;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
+    padding: 5px;
     margin: 0 20px ;
 }
 .banner__compu{
@@ -1643,6 +1702,50 @@ footer{
     height: 90vh;
     object-fit: cover;
 }
+.fondo__nosotros {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Altura completa de la ventana */
+    overflow: hidden;
+}
+.fondo__gamer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que el video cubra todo el contenedor */
+    z-index: 1; /* Video estará detrás del texto */
+}
+.texto__superpuesto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    z-index: 2; /* Texto estará encima del video */
+}
+/* galety albun */
+.galery__albun{
+    display: flex;
+    height: 30rem;
+    gap: 2rem;
+}
+.galery__albun .albun__img{
+    flex: 1;
+    border-radius: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+}
+.galery__albun .albun__img:hover{
+    flex: 50rem;
+}
 /* Estilo del botón de toggle */
 .nav-toggle {
     margin: auto;
@@ -1669,6 +1772,54 @@ footer{
     top: 5px;
     right: 5px;
     z-index: 1001;
+}
+/* servicio internet */
+.hero{
+    z-index: 1;
+    height: 100vh;
+    background-image: linear-gradient(180deg, #275dc288 0%, #1d20b681 100%), url("../img/internet.jpg");
+    background-position: center;
+    background-size: cover;
+    padding-top: .1px;
+    position: relative;
+}
+
+.container-text{
+    text-align: center;
+    margin-top: 150px;
+    color: #fff;
+}
+
+.hero__title{
+    font-size: 4rem;
+}
+
+.hero__copy{
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 20px 0;
+}
+
+.hero__cta{
+    display: inline-block;
+    background: #fff;
+    text-decoration: none;
+    color: #257dc2;
+    padding: 15px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.hero__cta:hover{
+    background: #257dc2;
+    color: #fff;
+}
+
+.hero__wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 /* espacion co los iconos */
 /* responsive */
