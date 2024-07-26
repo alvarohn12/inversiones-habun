@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 />
     <title>inversiones hasbun</title>
+
 </head>
 <body>
     <h2 class="encabezado-p">"Las Mejores Marcas y Modelos al Mejor Precio", "Soporte Técnico 24/7", y "Garantía de Satisfacción"</h2>
@@ -46,7 +47,10 @@
                 <button class="cresponsive" title="catalogo"><i class='bx bx-download'></i></button>
                 <a href="cursos.html" class="link-course" title="cursos"><img src="img/pureq-removebg-preview.png"alt="cursos"></a>
                 <a href="favoritos.html" class="favo-nav" title="favoritos"><i class='bx bx-heart'></i></a>
-                <a href="miscompras.html" class="cart-n" title="mis compras"><i class='bx bx-cart-alt'></i></a>
+                <a href="miscompras.html" class="cart-n" title="mis compras">
+                    <i class='bx bx-cart-alt'></i>
+                    <span class="cart-count" id="cart-count">0</span>
+                </a>
             </div>
 
         </div>
@@ -628,10 +632,17 @@
             </ul>
             <a href="https://api.whatsapp.com/send?phone=984110445" class="asesor" target="_blank">contactate con un asesor</a>
         </nav>
+        <!-- modal de agregacion -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p id="modal-message"></p>
+            </div>
+        </div>
         <section class="cards">
             <div class="card category1">
                 <div class="card-h">
-                    <span class="heart">🤍</span>
+                    <span class="heart" data-product="1">🤍</span>
                 </div>
                 <div class="img-cards">
                     <img src="img/laptop1.avif" alt="Producto 1" class="card-img">
@@ -654,281 +665,7 @@
                         <span class="c-star">4.8</span>
                     </div>
                     <div class="card-actions">
-                        <button class="btn add-to-cart">Añadir al Carrito</button>
-                        <button id="vermas" class=" vermas more-info">Más Información</button>
-                    </div>
-                </div>
-            </div>
-            <div class="overlay"></div>
-            <div class="cont-escondido">
-                <button class="close-btn">&times;</button>
-                <!-- Contenido del modal -->
-                <h3 class="laptop__name">Nombre de la laptop</h3>
-                <div class="laptop__content">
-                    <div class="content__slider">
-                        <div class="slider__producto" id="slider__producto">
-                            <div class="producto__slide"><img class="img__slide" src="img/audifonogamer.png" alt="Producto 1"></div>
-                            <div class="producto__slide"><img class="img__slide" src="img/laptopgaming.jpg" alt="Producto 2"></div>
-                            <div class="producto__slide"><img class="img__slide" src="img/laptop1.avif" alt="Producto 3"></div>
-                        </div>
-                        <div class="controls">
-                            <button class="control prev" id="prev">&#10094;</button>
-                            <button class="control next" id="next">&#10095;</button>
-                        </div>
-                        <div class="indicators" id="indicators">
-                            <span class="indicator" data-slide="0"></span>
-                            <span class="indicator" data-slide="1"></span>
-                            <span class="indicator" data-slide="2"></span>
-                        </div>
-                    </div>
-                    <div class="producto__descripcion">
-                        <div class="descripcion__especificacion">
-                            <div class="rating">
-                                <i class='bx bxs-star'></i>
-                                <i class='bx bxs-star'></i>
-                                <i class='bx bxs-star'></i>
-                                <i class='bx bxs-star'></i>
-                                <i class='bx bxs-star'></i>
-                                <span class="c-star">4.8</span>
-                            </div>
-                            <div class="card-prices">
-                                <span class="original-price">S/. 1500 <span class="descuento">descuento</span></span><br>
-                                <span class="discounted-price">S/. 1300.99</span>
-                            </div>
-                        </div>
-                        <div class="descripcion__boton">
-                            <button class="btnn">Añadir al Carrito</button>
-                            <div class="card-hd">
-                                <span class="heart">🤍</span>
-                            </div>
-                        </div>
-                        <ul class="carac">
-                            <li class="date__descripcion">Procesador
-                                Procesador Intel® Core™ i5-12450H de 12ᵃ Generación (núcleos E de hasta 3,30 GHz núcleos P de hasta 4,40 GHz)</li>
-                            <li class="date__descripcion">Procesador
-                                Procesador Intel® Core™ i5-12450H de 12ᵃ Generación (núcleos E de hasta 3,30 GHz núcleos P de hasta 4,40 GHz)</li>
-                            <li class="date__descripcion">Procesador
-                                Procesador Intel® Core™ i5-12450H de 12ᵃ Generación (núcleos E de hasta 3,30 GHz núcleos P de hasta 4,40 GHz)</li>
-                            <li class="date__descripcion">Procesador
-                                Procesador Intel® Core™ i5-12450H de 12ᵃ Generación (núcleos E de hasta 3,30 GHz núcleos P de hasta 4,40 GHz)</li>
-                            <li class="date__descripcion">Procesador
-                                Procesador Intel® Core™ i5-12450H de 12ᵃ Generación (núcleos E de hasta 3,30 GHz núcleos P de hasta 4,40 GHz)</li>
-                            <li class="date__descripcion">Procesador
-                                Procesador Intel® Core™ i5-12450H de 12ᵃ Generación (núcleos E de hasta 3,30 GHz núcleos P de hasta 4,40 GHz)</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            </div>
-                
-            <div class="card">
-                <div class="card-h">
-                    <span class="heart">🤍</span>
-                </div>
-                <div class="img-cards">
-                    <img src="img/laptop2.avif" alt="Producto 1" class="card-img">
-                </div>
-                <div class="card-content">
-                    <h3 class="card-title">Título del Producto</h3>
-                    <p class="card-description">Descripción breve del producto. Este es un ejemplo de texto que puede ocupar
-                        varias
-                        líneas.</p>
-                    <div class="card-prices">
-                        <span class="original-price">S/. 1000</span><br>
-                        <span class="discounted-price">S/. 1300.99</span>
-                    </div>
-                    <div class="rating">
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star'></i>
-                        <span class="c-star">4.8</span>
-                    </div>
-                    <div class="card-actions">
-                        <button class="btn add-to-cart">Añadir al Carrito</button>
-                        <button id="vermas" class=" vermas more-info">Más Información</button>
-                    </div>
-                </div>
-            </div>
-            <div class="overlay"></div>
-            <div class="cont-escondido">
-                <button class="close-btn">&times;</button>
-                <!-- Contenido del modal -->
-                <h3 class="laptop__name">Nombre de la laptop</h3>
-                <div class="laptop__content">
-                    <div class="content__slider">
-                        <div class="slider__producto" id="slider__producto">
-                            <div class="producto__slide"><img class="img__slide" src="img/audifonogamer.png" alt="Producto 1"></div>
-                            <div class="producto__slide"><img class="img__slide" src="img/laptopgaming.jpg" alt="Producto 2"></div>
-                            <div class="producto__slide"><img class="img__slide" src="img/laptop1.avif" alt="Producto 3"></div>
-                        </div>
-                        <div class="controls">
-                            <button class="control prev" id="prev">&#10094;</button>
-                            <button class="control next" id="next">&#10095;</button>
-                        </div>
-                        <div class="indicators" id="indicators">
-                            <span class="indicator" data-slide="0"></span>
-                            <span class="indicator" data-slide="1"></span>
-                            <span class="indicator" data-slide="2"></span>
-                        </div>
-                    </div>
-                    <div class="producto__descripcion">
-                        <div class="descripcion__especificacion">
-                            <div class="rating">
-                                <i class='bx bxs-star'></i>
-                                <i class='bx bxs-star'></i>
-                                <i class='bx bxs-star'></i>
-                                <i class='bx bxs-star'></i>
-                                <i class='bx bxs-star'></i>
-                                <span class="c-star">4.8</span>
-                            </div>
-                            <div class="card-prices">
-                                <span class="original-price">S/. 1500 <span class="descuento">descuento</span></span><br>
-                                <span class="discounted-price">S/. 1300.99</span>
-                            </div>
-                        </div>
-                        <div class="descripcion__boton">
-                            <button class="btnn">Añadir al Carrito</button>
-                            <div class="card-hd">
-                                <span class="heart">🤍</span>
-                            </div>
-                        </div>
-                        <ul class="carac">
-                            <li class="date__descripcion">Procesador
-                                Procesador Intel® Core™ i5-12450H de 12ᵃ Generación (núcleos E de hasta 3,30 GHz núcleos P de hasta 4,40 GHz)</li>
-                            <li class="date__descripcion">Procesador
-                                Procesador Intel® Core™ i5-12450H de 12ᵃ Generación (núcleos E de hasta 3,30 GHz núcleos P de hasta 4,40 GHz)</li>
-                            <li class="date__descripcion">Procesador
-                                Procesador Intel® Core™ i5-12450H de 12ᵃ Generación (núcleos E de hasta 3,30 GHz núcleos P de hasta 4,40 GHz)</li>
-                            <li class="date__descripcion">Procesador
-                                Procesador Intel® Core™ i5-12450H de 12ᵃ Generación (núcleos E de hasta 3,30 GHz núcleos P de hasta 4,40 GHz)</li>
-                            <li class="date__descripcion">Procesador
-                                Procesador Intel® Core™ i5-12450H de 12ᵃ Generación (núcleos E de hasta 3,30 GHz núcleos P de hasta 4,40 GHz)</li>
-                            <li class="date__descripcion">Procesador
-                                Procesador Intel® Core™ i5-12450H de 12ᵃ Generación (núcleos E de hasta 3,30 GHz núcleos P de hasta 4,40 GHz)</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            </div>
-            <div class="card">
-                <div class="card-h">
-                    <span class="heart">🤍</span>
-                </div>
-                <div class="img-cards">
-                    <img src="img/laptop1.avif" alt="Producto 1" class="card-img">
-                </div>
-                <div class="card-content">
-                    <h3 class="card-title">Título del Producto</h3>
-                    <p class="card-description">Descripción breve del producto. Este es un ejemplo de texto que puede ocupar
-                        varias
-                        líneas.</p>
-                    <div class="card-prices">
-                        <span class="original-price">S/. 1000</span><br>
-                        <span class="discounted-price">S/. 1300.99</span>
-                    </div>
-                    <div class="rating">
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star'></i>
-                        <span class="c-star">4.8</span>
-                    </div>
-                    <div class="card-actions">
-                        <button class="btn add-to-cart">Añadir al Carrito</button>
-                        <button id="vermas" class=" vermas more-info">Más Información</button>
-                    </div>
-                </div>
-            </div>
-            <div class="overlay"></div>
-            <div class="cont-escondido">
-                <button class="close-btn">&times;</button>
-                <!-- Contenido del modal -->
-                <h3 class="laptop__name">Nombre de la laptop</h3>
-                <div class="laptop__content">
-                    <div class="content__slider">
-                        <div class="slider__producto" id="slider__producto">
-                            <div class="producto__slide"><img class="img__slide" src="img/audifonogamer.png" alt="Producto 1"></div>
-                            <div class="producto__slide"><img class="img__slide" src="img/laptopgaming.jpg" alt="Producto 2"></div>
-                            <div class="producto__slide"><img class="img__slide" src="img/laptop1.avif" alt="Producto 3"></div>
-                        </div>
-                        <div class="controls">
-                            <button class="control prev" id="prev">&#10094;</button>
-                            <button class="control next" id="next">&#10095;</button>
-                        </div>
-                        <div class="indicators" id="indicators">
-                            <span class="indicator" data-slide="0"></span>
-                            <span class="indicator" data-slide="1"></span>
-                            <span class="indicator" data-slide="2"></span>
-                        </div>
-                    </div>
-                    <div class="producto__descripcion">
-                        <div class="descripcion__especificacion">
-                            <div class="rating">
-                                <i class='bx bxs-star'></i>
-                                <i class='bx bxs-star'></i>
-                                <i class='bx bxs-star'></i>
-                                <i class='bx bxs-star'></i>
-                                <i class='bx bxs-star'></i>
-                                <span class="c-star">4.8</span>
-                            </div>
-                            <div class="card-prices">
-                                <span class="original-price">S/. 1500 <span class="descuento">descuento</span></span><br>
-                                <span class="discounted-price">S/. 1300.99</span>
-                            </div>
-                        </div>
-                        <div class="descripcion__boton">
-                            <button class="btnn">Añadir al Carrito</button>
-                            <div class="card-hd">
-                                <span class="heart">🤍</span>
-                            </div>
-                        </div>
-                        <ul class="carac">
-                            <li class="date__descripcion">Procesador
-                                Procesador Intel® Core™ i5-12450H de 12ᵃ Generación (núcleos E de hasta 3,30 GHz núcleos P de hasta 4,40 GHz)</li>
-                            <li class="date__descripcion">Procesador
-                                Procesador Intel® Core™ i5-12450H de 12ᵃ Generación (núcleos E de hasta 3,30 GHz núcleos P de hasta 4,40 GHz)</li>
-                            <li class="date__descripcion">Procesador
-                                Procesador Intel® Core™ i5-12450H de 12ᵃ Generación (núcleos E de hasta 3,30 GHz núcleos P de hasta 4,40 GHz)</li>
-                            <li class="date__descripcion">Procesador
-                                Procesador Intel® Core™ i5-12450H de 12ᵃ Generación (núcleos E de hasta 3,30 GHz núcleos P de hasta 4,40 GHz)</li>
-                            <li class="date__descripcion">Procesador
-                                Procesador Intel® Core™ i5-12450H de 12ᵃ Generación (núcleos E de hasta 3,30 GHz núcleos P de hasta 4,40 GHz)</li>
-                            <li class="date__descripcion">Procesador
-                                Procesador Intel® Core™ i5-12450H de 12ᵃ Generación (núcleos E de hasta 3,30 GHz núcleos P de hasta 4,40 GHz)</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            </div>
-            <div class="card">
-                <div class="card-h">
-                    <span class="heart">🤍</span>
-                </div>
-                <div class="img-cards">
-                    <img src="img/laptop1.avif" alt="Producto 1" class="card-img">
-                </div>
-                <div class="card-content">
-                    <h3 class="card-title">Título del Producto</h3>
-                    <p class="card-description">Descripción breve del producto. Este es un ejemplo de texto que puede ocupar
-                        varias
-                        líneas.</p>
-                    <div class="card-prices">
-                        <span class="original-price">S/. 1000</span><br>
-                        <span class="discounted-price">S/. 1300.99</span>
-                    </div>
-                    <div class="rating">
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star'></i>
-                        <span class="c-star">4.8</span>
-                    </div>
-                    <div class="card-actions">
-                        <button class="btn add-to-cart">Añadir al Carrito</button>
+                        <button class="btn add-to-cart" data-producto="1">Añadir al Carrito</button>
                         <button id="vermas" class=" vermas more-info">Más Información</button>
                     </div>
                 </div>
@@ -1019,7 +756,280 @@
                         <span class="c-star">4.8</span>
                     </div>
                     <div class="card-actions">
-                        <button class="btn add-to-cart">Añadir al Carrito</button>
+                        <button class="btn add-to-cart" data-producto="2">Añadir al Carrito</button>
+                        <button id="vermas" class=" vermas more-info">Más Información</button>
+                    </div>
+                </div>
+            </div>
+            <div class="overlay"></div>
+            <div class="cont-escondido">
+                <button class="close-btn">&times;</button>
+                <!-- Contenido del modal -->
+                <h3 class="laptop__name">Nombre de la laptop</h3>
+                <div class="laptop__content">
+                    <div class="content__slider">
+                        <div class="slider__producto" id="slider__producto">
+                            <div class="producto__slide"><img class="img__slide" src="img/audifonogamer.png" alt="Producto 1"></div>
+                            <div class="producto__slide"><img class="img__slide" src="img/laptopgaming.jpg" alt="Producto 2"></div>
+                            <div class="producto__slide"><img class="img__slide" src="img/laptop1.avif" alt="Producto 3"></div>
+                        </div>
+                        <div class="controls">
+                            <button class="control prev" id="prev">&#10094;</button>
+                            <button class="control next" id="next">&#10095;</button>
+                        </div>
+                        <div class="indicators" id="indicators">
+                            <span class="indicator" data-slide="0"></span>
+                            <span class="indicator" data-slide="1"></span>
+                            <span class="indicator" data-slide="2"></span>
+                        </div>
+                    </div>
+                    <div class="producto__descripcion">
+                        <div class="descripcion__especificacion">
+                            <div class="rating">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <span class="c-star">4.8</span>
+                            </div>
+                            <div class="card-prices">
+                                <span class="original-price">S/. 1500 <span class="descuento">descuento</span></span><br>
+                                <span class="discounted-price">S/. 1300.99</span>
+                            </div>
+                        </div>
+                        <div class="descripcion__boton">
+                            <button class="btnn">Añadir al Carrito</button>
+                            <div class="card-hd">
+                                <span class="heart">🤍</span>
+                            </div>
+                        </div>
+                        <ul class="carac">
+                            <li class="date__descripcion">Procesador
+                                Procesador Intel® Core™ i5-12450H de 12ᵃ Generación (núcleos E de hasta 3,30 GHz núcleos P de hasta 4,40 GHz)</li>
+                            <li class="date__descripcion">Procesador
+                                Procesador Intel® Core™ i5-12450H de 12ᵃ Generación (núcleos E de hasta 3,30 GHz núcleos P de hasta 4,40 GHz)</li>
+                            <li class="date__descripcion">Procesador
+                                Procesador Intel® Core™ i5-12450H de 12ᵃ Generación (núcleos E de hasta 3,30 GHz núcleos P de hasta 4,40 GHz)</li>
+                            <li class="date__descripcion">Procesador
+                                Procesador Intel® Core™ i5-12450H de 12ᵃ Generación (núcleos E de hasta 3,30 GHz núcleos P de hasta 4,40 GHz)</li>
+                            <li class="date__descripcion">Procesador
+                                Procesador Intel® Core™ i5-12450H de 12ᵃ Generación (núcleos E de hasta 3,30 GHz núcleos P de hasta 4,40 GHz)</li>
+                            <li class="date__descripcion">Procesador
+                                Procesador Intel® Core™ i5-12450H de 12ᵃ Generación (núcleos E de hasta 3,30 GHz núcleos P de hasta 4,40 GHz)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="card">
+                <div class="card-h">
+                    <span class="heart">🤍</span>
+                </div>
+                <div class="img-cards">
+                    <img src="img/laptop1.avif" alt="Producto 1" class="card-img">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Título del Producto</h3>
+                    <p class="card-description">Descripción breve del producto. Este es un ejemplo de texto que puede ocupar
+                        varias
+                        líneas.</p>
+                    <div class="card-prices">
+                        <span class="original-price">S/. 1000</span><br>
+                        <span class="discounted-price">S/. 1300.99</span>
+                    </div>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <span class="c-star">4.8</span>
+                    </div>
+                    <div class="card-actions">
+                        <button class="btn add-to-cart" data-producto="3">Añadir al Carrito</button>
+                        <button id="vermas" class=" vermas more-info">Más Información</button>
+                    </div>
+                </div>
+            </div>
+            <div class="overlay"></div>
+            <div class="cont-escondido">
+                <button class="close-btn">&times;</button>
+                <!-- Contenido del modal -->
+                <h3 class="laptop__name">Nombre de la laptop</h3>
+                <div class="laptop__content">
+                    <div class="content__slider">
+                        <div class="slider__producto" id="slider__producto">
+                            <div class="producto__slide"><img class="img__slide" src="img/audifonogamer.png" alt="Producto 1"></div>
+                            <div class="producto__slide"><img class="img__slide" src="img/laptopgaming.jpg" alt="Producto 2"></div>
+                            <div class="producto__slide"><img class="img__slide" src="img/laptop1.avif" alt="Producto 3"></div>
+                        </div>
+                        <div class="controls">
+                            <button class="control prev" id="prev">&#10094;</button>
+                            <button class="control next" id="next">&#10095;</button>
+                        </div>
+                        <div class="indicators" id="indicators">
+                            <span class="indicator" data-slide="0"></span>
+                            <span class="indicator" data-slide="1"></span>
+                            <span class="indicator" data-slide="2"></span>
+                        </div>
+                    </div>
+                    <div class="producto__descripcion">
+                        <div class="descripcion__especificacion">
+                            <div class="rating">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <span class="c-star">4.8</span>
+                            </div>
+                            <div class="card-prices">
+                                <span class="original-price">S/. 1500 <span class="descuento">descuento</span></span><br>
+                                <span class="discounted-price">S/. 1300.99</span>
+                            </div>
+                        </div>
+                        <div class="descripcion__boton">
+                            <button class="btnn">Añadir al Carrito</button>
+                            <div class="card-hd">
+                                <span class="heart">🤍</span>
+                            </div>
+                        </div>
+                        <ul class="carac">
+                            <li class="date__descripcion">Procesador
+                                Procesador Intel® Core™ i5-12450H de 12ᵃ Generación (núcleos E de hasta 3,30 GHz núcleos P de hasta 4,40 GHz)</li>
+                            <li class="date__descripcion">Procesador
+                                Procesador Intel® Core™ i5-12450H de 12ᵃ Generación (núcleos E de hasta 3,30 GHz núcleos P de hasta 4,40 GHz)</li>
+                            <li class="date__descripcion">Procesador
+                                Procesador Intel® Core™ i5-12450H de 12ᵃ Generación (núcleos E de hasta 3,30 GHz núcleos P de hasta 4,40 GHz)</li>
+                            <li class="date__descripcion">Procesador
+                                Procesador Intel® Core™ i5-12450H de 12ᵃ Generación (núcleos E de hasta 3,30 GHz núcleos P de hasta 4,40 GHz)</li>
+                            <li class="date__descripcion">Procesador
+                                Procesador Intel® Core™ i5-12450H de 12ᵃ Generación (núcleos E de hasta 3,30 GHz núcleos P de hasta 4,40 GHz)</li>
+                            <li class="date__descripcion">Procesador
+                                Procesador Intel® Core™ i5-12450H de 12ᵃ Generación (núcleos E de hasta 3,30 GHz núcleos P de hasta 4,40 GHz)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="card">
+                <div class="card-h">
+                    <span class="heart">🤍</span>
+                </div>
+                <div class="img-cards">
+                    <img src="img/laptop1.avif" alt="Producto 1" class="card-img">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Título del Producto</h3>
+                    <p class="card-description">Descripción breve del producto. Este es un ejemplo de texto que puede ocupar
+                        varias
+                        líneas.</p>
+                    <div class="card-prices">
+                        <span class="original-price">S/. 1000</span><br>
+                        <span class="discounted-price">S/. 1300.99</span>
+                    </div>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <span class="c-star">4.8</span>
+                    </div>
+                    <div class="card-actions">
+                        <button class="btn add-to-cart" data-producto="4">Añadir al Carrito</button>
+                        <button id="vermas" class=" vermas more-info">Más Información</button>
+                    </div>
+                </div>
+            </div>
+            <div class="overlay"></div>
+            <div class="cont-escondido">
+                <button class="close-btn">&times;</button>
+                <!-- Contenido del modal -->
+                <h3 class="laptop__name">Nombre de la laptop</h3>
+                <div class="laptop__content">
+                    <div class="content__slider">
+                        <div class="slider__producto" id="slider__producto">
+                            <div class="producto__slide"><img class="img__slide" src="img/audifonogamer.png" alt="Producto 1"></div>
+                            <div class="producto__slide"><img class="img__slide" src="img/laptopgaming.jpg" alt="Producto 2"></div>
+                            <div class="producto__slide"><img class="img__slide" src="img/laptop1.avif" alt="Producto 3"></div>
+                        </div>
+                        <div class="controls">
+                            <button class="control prev" id="prev">&#10094;</button>
+                            <button class="control next" id="next">&#10095;</button>
+                        </div>
+                        <div class="indicators" id="indicators">
+                            <span class="indicator" data-slide="0"></span>
+                            <span class="indicator" data-slide="1"></span>
+                            <span class="indicator" data-slide="2"></span>
+                        </div>
+                    </div>
+                    <div class="producto__descripcion">
+                        <div class="descripcion__especificacion">
+                            <div class="rating">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <span class="c-star">4.8</span>
+                            </div>
+                            <div class="card-prices">
+                                <span class="original-price">S/. 1500 <span class="descuento">descuento</span></span><br>
+                                <span class="discounted-price">S/. 1300.99</span>
+                            </div>
+                        </div>
+                        <div class="descripcion__boton">
+                            <button class="btnn">Añadir al Carrito</button>
+                            <div class="card-hd">
+                                <span class="heart">🤍</span>
+                            </div>
+                        </div>
+                        <ul class="carac">
+                            <li class="date__descripcion">Procesador
+                                Procesador Intel® Core™ i5-12450H de 12ᵃ Generación (núcleos E de hasta 3,30 GHz núcleos P de hasta 4,40 GHz)</li>
+                            <li class="date__descripcion">Procesador
+                                Procesador Intel® Core™ i5-12450H de 12ᵃ Generación (núcleos E de hasta 3,30 GHz núcleos P de hasta 4,40 GHz)</li>
+                            <li class="date__descripcion">Procesador
+                                Procesador Intel® Core™ i5-12450H de 12ᵃ Generación (núcleos E de hasta 3,30 GHz núcleos P de hasta 4,40 GHz)</li>
+                            <li class="date__descripcion">Procesador
+                                Procesador Intel® Core™ i5-12450H de 12ᵃ Generación (núcleos E de hasta 3,30 GHz núcleos P de hasta 4,40 GHz)</li>
+                            <li class="date__descripcion">Procesador
+                                Procesador Intel® Core™ i5-12450H de 12ᵃ Generación (núcleos E de hasta 3,30 GHz núcleos P de hasta 4,40 GHz)</li>
+                            <li class="date__descripcion">Procesador
+                                Procesador Intel® Core™ i5-12450H de 12ᵃ Generación (núcleos E de hasta 3,30 GHz núcleos P de hasta 4,40 GHz)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="card">
+                <div class="card-h">
+                    <span class="heart">🤍</span>
+                </div>
+                <div class="img-cards">
+                    <img src="img/laptop2.avif" alt="Producto 1" class="card-img">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Título del Producto</h3>
+                    <p class="card-description">Descripción breve del producto. Este es un ejemplo de texto que puede ocupar
+                        varias
+                        líneas.</p>
+                    <div class="card-prices">
+                        <span class="original-price">S/. 1000</span><br>
+                        <span class="discounted-price">S/. 1300.99</span>
+                    </div>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <span class="c-star">4.8</span>
+                    </div>
+                    <div class="card-actions">
+                        <button class="btn add-to-cart" data-producto="5">Añadir al Carrito</button>
                         <button id="vermas" class=" vermas more-info">Más Información</button>
                     </div>
                 </div>
@@ -1110,7 +1120,7 @@
                         <span class="c-star">4.8</span>
                     </div>
                     <div class="card-actions">
-                        <button class="btn add-to-cart">Añadir al Carrito</button>
+                        <button class="btn add-to-cart" data-producto="6">Añadir al Carrito</button>
                         <button id="vermas" class=" vermas more-info">Más Información</button>
                     </div>
                 </div>
@@ -1201,7 +1211,7 @@
                         <span class="c-star">4.8</span>
                     </div>
                     <div class="card-actions">
-                        <button class="btn add-to-cart">Añadir al Carrito</button>
+                        <button class="btn add-to-cart" data-producto="7">Añadir al Carrito</button>
                         <button id="vermas" class=" vermas more-info">Más Información</button>
                     </div>
                 </div>
@@ -1268,7 +1278,7 @@
             </div>
             <div class="card">
                 <div class="card-h">
-                    <span class="heart">🤍</span>
+                    <button class="heart"><i class='bx bx-heart'></i></button>
                 </div>
                 <div class="img-cards">
                     <img src="img/laptop1.avif" alt="Producto 1" class="card-img">
@@ -1291,7 +1301,7 @@
                         <span class="c-star">4.8</span>
                     </div>
                     <div class="card-actions">
-                        <button class="btn add-to-cart">Añadir al Carrito</button>
+                        <button class="btn add-to-cart" data-producto="8">Añadir al Carrito</button>
                         <button id="vermas" class=" vermas more-info">Más Información</button>
                     </div>
                 </div>
@@ -1360,5 +1370,7 @@
     <script src="js/productos.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/favo.js"></script>
+    <script src="js/carrito.js"></script>
+    <script src="js/produccar.js"></script>
 </body>
 </html>

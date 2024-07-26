@@ -29,6 +29,8 @@
 body{
     background-color: var(--colorfondo);
     font-size: 18px;
+    width: 98%;
+    margin: auto;
 }
 .container__curso{
     display: grid;
@@ -100,9 +102,13 @@ body{
     background-color: #0056b3;
 }
 .section__general{
+    width: 95%;
     display: grid;
+    align-items: center;
     grid-template-columns: 1fr 1fr;
-    margin: 20px;
+    margin: 10px auto;
+    background-color: var(--colorsecundario);
+    border-radius: 10px;
 }
 .section__curso{
     width: 100%;

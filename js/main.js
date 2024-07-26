@@ -142,7 +142,7 @@ showSlide(currentIndex);
 // Auto slide
 setInterval(() => {
     changeSlide(1);
-}, 5000);
+}, 10000);
 /* filtrado */
 // slider de cards
 document.addEventListener('DOMContentLoaded', () => {
@@ -195,7 +195,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     let alertaCerrar = document.querySelector('.alerta__close');
     
     /* tiempo para que aparezca la alerta */
-    let tiempoAlerta=5000;
+    let tiempoAlerta=20000;
 
     setTimeout(() =>{
         alerta.style.display='block';
