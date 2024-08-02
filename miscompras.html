@@ -14,6 +14,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://kit.fontawesome.com/ec72aeb094.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
     <title>inversiones hasbun</title>
 </head>
 
@@ -184,36 +185,15 @@
                 </ul>
             </nav>
         </header>
-        <div class="cart">
-            <h2>Carrito de Compras</h2>
-            <div id="cart-items"></div>
-            <div class="cart-total">
-                Total: S/. <span id="cart-total">0.00</span>
-            </div>
-            <button class="pay-button" id="pay-button">Pagar</button>
-                    <!-- Modal de confirmación de eliminación -->
-            <div id="confirm-delete-modal" class="modal">
-                <div class="modal-content">
-                    <span class="close" id="confirm-delete-close">&times;</span>
-                    <p id="confirm-delete-message">¿Estás seguro de que deseas eliminar este producto del carrito?</p>
-                    <div class="confirm-buttons">
-                        <button id="confirm-delete-yes" class="confirm__yes">Aceptar</button>
-                        <button id="confirm-delete-no" class="confirm__no">Cancelar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-<!-- Modal de alerta -->
-<div id="alert-modal" class="modal">
-    <div class="modal-content">
-        <span class="close" id="alert-close">&times;</span>
-        <p id="alert-message"></p>
-    </div>
-</div>
-    <script src="js/menu.js"></script>
-    <script src="js/produccar.js"></script>
-    <script src="js/favo.js"></script>
-    <script src="js/carrito.js"></script>
+        <h1>Mi Carrito de Compras</h1>
+        <div id="cart-container" class="cart-container">
+            <!-- Productos del carrito se añadirán aquí dinámicamente -->
+        </div>
+        <button id="clear-cart">Vaciar carrito</button>
+        <button id="checkout">Proceder al pago</button>
+    
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/miscompras.js"></script>
 </body>
 </html>
